@@ -1,0 +1,120 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+
+header {
+    background: #4098f0;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem; 
+}
+
+.logo img {
+    width: 50px;
+    height: 50px; 
+    object-fit: contain; 
+}
+
+header .logo h1 {
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+section {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#presentacion {
+    background: #e6f0ff;
+}
+
+#presentacion h2 {
+    margin-bottom: 1rem;
+}
+
+#presentacion button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    background: #004080;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#presentacion button:hover {
+    background: #0066cc;
+}
+
+
+#mision-vision {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#mision-vision article {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+footer {
+    background: #004080;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer .redes a {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+footer .redes a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 768px) {
+    #mision-vision {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
